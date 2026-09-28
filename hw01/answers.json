@@ -1,0 +1,107 @@
+{
+  "course": "ML Zoomcamp 2026",
+  "homework": "HW1",
+  "dataset_url": "https://raw.githubusercontent.com/DataTalksClub/machine-learning-zoomcamp/main/cohorts/2026/data/car_fuel_efficiency_2026.csv",
+  "dataset_sha256": "00a5cab178a8b7cd6e9157ee71dabc236ba7f20b1832336d358b07af14ba431f",
+  "environment": {
+    "python": "3.14.5",
+    "pandas": "3.0.5",
+    "numpy": "2.5.3"
+  },
+  "answers": {
+    "Q1": "3.0.5",
+    "Q2": 10000,
+    "Q3": 3,
+    "Q4": 2,
+    "Q5": 41.2,
+    "Q6": "Yes, it decreased",
+    "Q7": 0.369
+  },
+  "missing_by_column": {
+    "model_year": 0,
+    "origin": 0,
+    "fuel_type": 0,
+    "drivetrain": 0,
+    "num_doors": 0,
+    "engine_displacement": 0,
+    "num_cylinders": 0,
+    "horsepower": 877,
+    "vehicle_weight": 0,
+    "acceleration": 264,
+    "fuel_efficiency_mpg": 0
+  },
+  "horsepower": {
+    "median_before": 254.0,
+    "mode": 252.0,
+    "median_after": 252.0
+  },
+  "regression": {
+    "row_indices": [
+      2,
+      6,
+      8,
+      10,
+      15,
+      16,
+      22
+    ],
+    "X": [
+      [
+        4240,
+        1996
+      ],
+      [
+        4310,
+        1992
+      ],
+      [
+        4230,
+        1997
+      ],
+      [
+        4420,
+        1978
+      ],
+      [
+        3950,
+        2007
+      ],
+      [
+        4750,
+        2021
+      ],
+      [
+        4450,
+        2019
+      ]
+    ],
+    "y": [
+      1100,
+      1300,
+      800,
+      900,
+      1000,
+      1100,
+      1200
+    ],
+    "XTX": [
+      [
+        131950500,
+        60750580
+      ],
+      [
+        60750580,
+        28041424
+      ]
+    ],
+    "w": [
+      0.1364477656156794,
+      0.23274920343357547
+    ],
+    "weight_sum": 0.36919696904925486,
+    "lstsq_w": [
+      0.13644776561568264,
+      0.23274920343357816
+    ]
+  }
+}
