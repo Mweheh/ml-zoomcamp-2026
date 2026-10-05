@@ -22,6 +22,25 @@ Repo ini khusus Machine Learning Zoomcamp 2026 dari DataTalksClub.
 
 Median horsepower berubah dari 254.0 menjadi 252.0 setelah nilai kosong diisi dengan mode 252.0. Jumlah bobot Q7 sebelum dipetakan ke pilihan jawaban adalah `0.36919696904925486`.
 
+
+## HW2 — Machine Learning for Regression
+
+- [Notebook solusi](hw02/hw02.ipynb)
+- [Jawaban dan bukti numerik](hw02/answers.json)
+- [Instruksi resmi](https://github.com/DataTalksClub/machine-learning-zoomcamp/blob/main/cohorts/2026/homework/02-regression/homework.md)
+- [Form submission](https://courses.datatalks.club/ml-zoomcamp-2026/homework/hw02)
+
+| Soal | Jawaban submission |
+| --- | --- |
+| Q1 | horsepower |
+| Q2 | 254 |
+| Q3 | With mean |
+| Q4 | 0 |
+| Q5 | 0.029 |
+| Q6 | 2.236 |
+
+HW2 menggunakan empat fitur numerik `engine_displacement`, `horsepower`, `vehicle_weight`, dan `model_year` untuk memprediksi `fuel_efficiency_mpg`. Hasil dihitung dari pinned 2026 dataset dan mengikuti split, seed, imputation, rounding, serta tie-breaking rule homework resmi.
+
 ## Menjalankan ulang
 
 Gunakan Python 3.14.5. Pasang dependency dari `requirements.txt`, buka `hw01/hw01.ipynb` di Jupyter, VS Code, atau Colab, lalu jalankan seluruh cell secara berurutan. Di Colab, unggah CSV ke direktori kerja sebelum menjalankan notebook. Versi Pandas untuk Q1 harus sesuai environment yang benar-benar digunakan.
