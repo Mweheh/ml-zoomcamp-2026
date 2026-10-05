@@ -1,0 +1,51 @@
+{
+  "course": "ML Zoomcamp 2026",
+  "homework": "HW2 — Machine Learning for Regression",
+  "official_homework": "https://github.com/DataTalksClub/machine-learning-zoomcamp/blob/main/cohorts/2026/homework/02-regression/homework.md",
+  "dataset_url": "https://raw.githubusercontent.com/DataTalksClub/machine-learning-zoomcamp/main/cohorts/2026/data/car_fuel_efficiency_2026.csv",
+  "dataset_sha256": "00a5cab178a8b7cd6e9157ee71dabc236ba7f20b1832336d358b07af14ba431f",
+  "answers": {
+    "Q1": "horsepower",
+    "Q2": 254,
+    "Q3": "With mean",
+    "Q4": 0,
+    "Q5": 0.029,
+    "Q6": 2.236
+  },
+  "evidence": {
+    "q1_missing_columns": [
+      "horsepower"
+    ],
+    "q2_horsepower_median": 254,
+    "q3_rmse": {
+      "zero": 2.2052931947515733,
+      "mean": 2.201817484568867,
+      "rounded_zero": 2.205,
+      "rounded_mean": 2.202
+    },
+    "q4_rmse_rounded_4dp": {
+      "0": 2.2053,
+      "1": 2.2053,
+      "5": 2.2053,
+      "10": 2.2053,
+      "100": 2.2053,
+      "0.01": 2.2053,
+      "0.1": 2.2053
+    },
+    "q4_tie_rule": "All listed r values tie after rounding to 4 decimals; select the smallest r.",
+    "q5_validation_rmse_by_seed": [
+      2.239204143051444,
+      2.202112821084277,
+      2.163419778753262,
+      2.2043588768529974,
+      2.2018800943313415,
+      2.245785150908689,
+      2.2697212079516262,
+      2.1907945999354768,
+      2.216611201694463,
+      2.207036592823008
+    ],
+    "q5_std": 0.02878127407828188,
+    "q6_test_rmse": 2.235774702814129
+  }
+}
