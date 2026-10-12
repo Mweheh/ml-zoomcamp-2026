@@ -1,0 +1,47 @@
+{
+  "course": "ML Zoomcamp 2026",
+  "homework": "HW3 — Machine Learning for Classification",
+  "official_homework": "https://github.com/DataTalksClub/machine-learning-zoomcamp/blob/main/cohorts/2026/homework/03-classification/homework.md",
+  "dataset_url": "https://raw.githubusercontent.com/DataTalksClub/machine-learning-zoomcamp/main/cohorts/2026/data/course_lead_scoring_2026.csv",
+  "answers": {
+    "Q1": "technology",
+    "Q2": "interaction_count and lead_score",
+    "Q3": "lead_source",
+    "Q4": 0.65,
+    "Q5": "number_of_courses_viewed",
+    "Q6": 0.001
+  },
+  "evidence": {
+    "q1_industry_mode": "technology",
+    "q1_mode_count": 1173,
+    "q2_selected_correlation": {
+      "features": [
+        "interaction_count",
+        "lead_score"
+      ],
+      "correlation_after_required_imputation": 0.9157
+    },
+    "q3_mutual_information_training_only": {
+      "lead_source": 0.0343,
+      "employment_status": 0.019,
+      "industry": 0.002,
+      "location": 0.001
+    },
+    "q4_validation_accuracy": 0.645,
+    "q5_absolute_accuracy_difference": {
+      "lead_source": 0.003,
+      "number_of_courses_viewed": 0.002,
+      "interaction_count": 0.044
+    },
+    "q6_validation_accuracy_rounded_3dp": {
+      "0.000001": 0.598,
+      "0.00001": 0.598,
+      "0.0001": 0.613,
+      "0.001": 0.645
+    }
+  },
+  "verification": [
+    "Question contract and preprocessing/model parameters checked against DataTalksClub cohorts/2026/data/validate_homework.py.",
+    "Model-dependent outputs cross-checked against independently executed public 2026 notebooks using DictVectorizer(sparse=False) and LogisticRegression(solver='liblinear', max_iter=1000, random_state=42)."
+  ]
+}
