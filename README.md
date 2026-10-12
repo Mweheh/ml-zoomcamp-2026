@@ -41,6 +41,25 @@ Median horsepower berubah dari 254.0 menjadi 252.0 setelah nilai kosong diisi de
 
 HW2 menggunakan empat fitur numerik `engine_displacement`, `horsepower`, `vehicle_weight`, dan `model_year` untuk memprediksi `fuel_efficiency_mpg`. Hasil dihitung dari pinned 2026 dataset dan mengikuti split, seed, imputation, rounding, serta tie-breaking rule homework resmi.
 
+
+## HW3 — Machine Learning for Classification
+
+- [Notebook solusi](hw03/hw03.ipynb)
+- [Jawaban dan bukti numerik](hw03/answers.json)
+- [Instruksi resmi](https://github.com/DataTalksClub/machine-learning-zoomcamp/blob/main/cohorts/2026/homework/03-classification/homework.md)
+- [Form submission](https://courses.datatalks.club/ml-zoomcamp-2026/homework/hw03)
+
+| Soal | Jawaban submission |
+| --- | --- |
+| Q1 | technology |
+| Q2 | interaction_count and lead_score |
+| Q3 | lead_source |
+| Q4 | 0.65 |
+| Q5 | number_of_courses_viewed |
+| Q6 | 0.001 |
+
+HW3 menggunakan pinned 2026 lead-scoring dataset, imputasi kategori ke `NA` dan numerik ke `0.0`, split `random_state=42`, one-hot encoding melalui `DictVectorizer`, serta `LogisticRegression(solver='liblinear', max_iter=1000, random_state=42)` sesuai homework resmi.
+
 ## Menjalankan ulang
 
 Gunakan Python 3.14.5. Pasang dependency dari `requirements.txt`, buka `hw01/hw01.ipynb` di Jupyter, VS Code, atau Colab, lalu jalankan seluruh cell secara berurutan. Di Colab, unggah CSV ke direktori kerja sebelum menjalankan notebook. Versi Pandas untuk Q1 harus sesuai environment yang benar-benar digunakan.
